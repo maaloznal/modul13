@@ -24,7 +24,7 @@ describe("fetchUsers with API stub", function () {
       consoleErrorStub.restore();
   });
 
-  it("should process and log data correctly", async function () {
+  it("должен корректно обрабатывать и логировать данные", async function () {
     const users = [
       { id: 1, name: "Leanne Graham" },
       { id: 2, name: "Ervin Howell" },
@@ -49,12 +49,12 @@ describe("fetchUsers with API stub", function () {
     expect(consoleLogStub.getCall(1).args[0]).to.equal("Ervin Howell");
   });
 
-  it("should handle API errors gracefully", async function () {
+  it("должен корректно обрабатывать ошибки API", async function () {
     fetchStub.resolves({ ok: false });
 
     try {
       await fetchUsers();
-      throw new Error("Expected fetchUsers to throw an error");
+      throw new Error("Ожидалось, что fetchUsers выбросит ошибку");
     } catch (error) {
       expect(fetchStub).to.have.been.calledWith(
         "https://jsonplaceholder.typicode.com/users"

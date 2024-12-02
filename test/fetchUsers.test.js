@@ -6,7 +6,7 @@ import fetchUsers from "../fetchUsers.js";
 const expect = chai.expect;
 chai.use(sinonChai);
 
-describe("fetchUsers with API stub", function () {
+describe("fetchUsers с заглушкой API", function () {
   let fetchStub;
   let consoleLogStub;
   let consoleErrorStub;

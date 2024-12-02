@@ -1,0 +1,19 @@
+{
+  "name": "modul13",
+  "version": "1.0.0",
+  "main": "func.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "mocha": "^11.0.1",
+    "sinon": "^19.0.2",
+    "sinon-chai": "^4.0.0"
+  }
+}
